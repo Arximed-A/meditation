@@ -149,6 +149,9 @@ body {
   font-weight: 400;
   text-transform: capitalize;
   color: #000000;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .menu__link:visited {
@@ -158,6 +161,7 @@ body {
 .menu__link:hover {
   color: #1a7f72;
   font-weight: 500;
+  text-decoration: underline;
 }
 
 .icon-menu {
@@ -177,7 +181,7 @@ body {
           align-items: center;
   position: relative;
   width: 100%;
-  background: url("../img/footer/grass.svg") 0 bottom/auto 71% repeat-x, url("../img/footer/1.svg") 0 0/auto 100% no-repeat, url("../img/footer/2.svg") 0 0/auto 100% no-repeat, rgba(59, 209, 187, 0.2);
+  background: url("../img/footer/background.svg") 0 bottom/auto 100%, rgba(59, 209, 187, 0.2);
 }
 
 .footer__logo {
@@ -236,6 +240,10 @@ body {
 
 .menu-footer__link:visited {
   color: #000;
+}
+
+.menu-footer__link:hover {
+  text-decoration: underline;
 }
 
 .social-footer {
@@ -313,6 +321,14 @@ body {
   padding: 12px 0;
   text-align: center;
   text-transform: capitalize;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.button:hover {
+  -webkit-box-shadow: 0px 0px 10px #29a191;
+          box-shadow: 0px 0px 10px #29a191;
 }
 
 .button_big {
@@ -390,7 +406,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: url("../img/meditations/border.svg") 0 0/auto auto no-repeat, url("../img/meditations/bored_2.svg") 0 10px/auto auto no-repeat, rgba(59, 209, 187, 0.2);
+  background: url("../img/meditations/bg.svg") 0 0/auto auto no-repeat, rgba(59, 209, 187, 0.2);
   position: relative;
 }
 
@@ -485,7 +501,6 @@ body {
   padding: 0px 48px;
   font-size: 18px;
   margin: 0px 0px 60px 0px;
-  line-height: calc(24px - 18px * 100%);
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
